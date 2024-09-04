@@ -71,8 +71,8 @@ export default function LoginScreen({ navigation }) {
       <TouchableOpacity onPress={() => navigation.navigate("Register")}>
         <Text style={styles.registerText}>Don't have an account? Register</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate("ForgotPassword")}>
-        <Text style={styles.registerText}>Forgot password ?</Text>
+      <TouchableOpacity onPress={() => navigation.navigate("Register")}>
+        <Text style={styles.registerText}>Don't have an account? Register</Text>
       </TouchableOpacity>
     </View>
   );
