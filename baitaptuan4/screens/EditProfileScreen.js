@@ -66,7 +66,9 @@ const EditProfileScreen = ({ navigation }) => {
 
   return (
     <View className="flex-1 justify-center p-5">
-      <Text className="text-2xl font-bold mb-5 text-center">Register</Text>
+      <Text className="text-2xl font-bold mb-5 text-center">
+        Update profile
+      </Text>
 
       <TextInput
         className="h-12 border border-gray-300 px-3 rounded-md mb-5"

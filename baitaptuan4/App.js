@@ -12,6 +12,7 @@ import RegisterScreen from "./screens/RegisterScreen";
 import ResetPasswordScreen from "./screens/ResetPasswordScreen";
 import OTPScreen from "./screens/OTPScreen";
 import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 const Stack = createNativeStackNavigator();
 const HomeStack = () => {
   return (
@@ -41,6 +42,8 @@ export default function App() {
           <Stack.Screen name="ResetPassword" component={ResetPasswordScreen} />
           <Stack.Screen name="OTP" component={OTPScreen} />
           <Stack.Screen name="EditProfile" component={EditProfileScreen} />
+          <Stack.Screen name="Profile" component={ProfileScreen} />
+
           <Stack.Screen
             name="Home"
             component={HomeScreen}

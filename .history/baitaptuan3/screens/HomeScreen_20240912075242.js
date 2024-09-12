@@ -7,9 +7,17 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View className="flex-1 justify-center items-center">
       <Text className="text-2xl font-bold">Welcome to the Homepage!</Text>
-
-      <TouchableOpacity onPress={() => navigation.navigate("EditProfile")}>
-        <Text className="text-blue-600 mt-4">Edit Profile</Text>
+      <TouchableOpacity
+        className="bg-blue-600 py-3 px-6 rounded-md mt-4"
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Text className="text-white font-bold">Profile</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        className="bg-blue-600 py-3 px-6 rounded-md mt-4"
+        onPress={() => navigation.navigate("EditProfile")}
+      >
+        <Text className="text-white font-bold">Edit Profile</Text>
       </TouchableOpacity>
     </View>
   );
