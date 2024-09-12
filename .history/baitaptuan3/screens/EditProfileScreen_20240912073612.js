@@ -112,5 +112,3 @@ const EditProfileScreen = ({ navigation }) => {
     </View>
   );
 };
-
-export default EditProfileScreen;

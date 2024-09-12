@@ -48,32 +48,59 @@ export default function ForgotPasswordScreen({ navigation }) {
   };
 
   return (
-    <View className="flex-1 justify-center p-5">
-      <Text className="text-2xl font-bold mb-6 text-center">
-        Forgot Password
-      </Text>
-
+    <View style={styles.container}>
+      <Text style={styles.title}>Forgot Password</Text>
       <TextInput
-        className="h-12 border border-gray-300 px-3 rounded-md mb-5"
+        style={styles.input}
         placeholder="Enter your email"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
         autoCapitalize="none"
       />
-
-      <TouchableOpacity
-        className="bg-blue-600 py-4 rounded-md"
-        onPress={handleForgotPassword}
-      >
-        <Text className="text-white text-center font-bold">
-          Send Reset Link
-        </Text>
+      <TouchableOpacity style={styles.button} onPress={handleForgotPassword}>
+        <Text style={styles.buttonText}>Send Reset Link</Text>
       </TouchableOpacity>
-
       <TouchableOpacity onPress={() => navigation.goBack()}>
-        <Text className="text-blue-600 text-center mt-6">Back to Login</Text>
+        <Text style={styles.backToLoginText}>Back to Login</Text>
       </TouchableOpacity>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+    textAlign: "center",
+  },
+  input: {
+    height: 50,
+    borderColor: "#ddd",
+    borderWidth: 1,
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    borderRadius: 5,
+  },
+  button: {
+    backgroundColor: "#007bff",
+    paddingVertical: 15,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+  backToLoginText: {
+    marginTop: 20,
+    color: "#007bff",
+    textAlign: "center",
+  },
+});
