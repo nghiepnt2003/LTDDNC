@@ -6,6 +6,7 @@ import {
   Alert,
   TouchableOpacity,
   TextInput,
+  Image,
 } from "react-native";
 
 import { useUser } from "../src/hook/userContext";

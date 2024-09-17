@@ -163,9 +163,7 @@ export default function OTPScreen({ route, navigation }) {
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => navigation.goBack()}>
-        <Text className="text-blue-600 text-center mt-6 text-lg">
-          Back to Login
-        </Text>
+        <Text className="text-blue-600 text-center mt-6 text-lg">Back</Text>
       </TouchableOpacity>
     </View>
   );

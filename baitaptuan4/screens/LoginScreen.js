@@ -39,7 +39,7 @@ export default function LoginScreen({ navigation }) {
         setUser(data.userData);
         await AsyncStorage.setItem("@accessToken", data.accessToken);
         Alert.alert("Success", "Login successful", [
-          { text: "OK", onPress: () => navigation.navigate("Home") }, // Redirect to Home screen or any other screen
+          { text: "OK", onPress: () => navigation.navigate("Main") }, // Redirect to Home screen or any other screen
         ]);
       } else {
         // Handle errors (e.g., invalid credentials)
